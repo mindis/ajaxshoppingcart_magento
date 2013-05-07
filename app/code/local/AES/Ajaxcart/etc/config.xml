@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <AES_Ajaxcart>
+      <version>0.1.0</version>
+    </AES_Ajaxcart>
+  </modules>
+  <frontend>
+    <routers>
+      <ajaxcart>
+        <use>standard</use>
+          <args>
+            <module>AES_Ajaxcart</module>
+            <frontName>ajaxcart</frontName>
+          </args>
+      </ajaxcart>
+    </routers>
+    <layout>
+        <updates>
+            <ajaxcart>
+                <file>ajaxcart.xml</file>
+            </ajaxcart>
+        </updates>
+    </layout>
+  </frontend>
+  <global>
+    <helpers>
+      <ajaxcart>
+        <class>AES_Ajaxcart_Helper</class>
+      </ajaxcart>
+    </helpers>
+	<blocks>
+	  <ajaxcart>
+		<class>AES_Ajaxcart_Block</class>
+	  </ajaxcart>
+	</blocks>
+  </global>
+  
+</config> 
